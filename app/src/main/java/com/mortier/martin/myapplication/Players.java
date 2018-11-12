@@ -1,6 +1,7 @@
 package com.mortier.martin.myapplication;
 
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,22 +14,37 @@ import android.widget.ListView;
 public class Players extends Fragment {
 
     private ListView listeView;
-    private String[] players = new String[]{
-            "Luca", "Marc", "Petit pierre", "Han ouais", "Michael"
+
+    private Integer[] numMaillot = {
+            1,2
     };
-    public Players() {
-        // Required empty public constructor
-    }
+    private String[] namePlayers = {
+            "Passarello", "Quenon"
+    };
+    private String[] firstnamePlayers = {
+            "Luca", "Marc"
+    };
+    private Integer[] attackPlayers = {
+            20,80
+    };
+    private Integer[] defensePlayers = {
+            5, 100
+    };
+    private Integer[] salaryPlayers = {
+            1, 100
+    };
+
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
        View view = inflater.inflate(R.layout.fragment_players, container, false);
+        CustomListAdapter adapter=new CustomListAdapter(getActivity(), numMaillot, namePlayers, firstnamePlayers, attackPlayers, defensePlayers, salaryPlayers);
         listeView = (ListView) view.findViewById(R.id.listView);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, players);
         listeView.setAdapter(adapter);
        return view;
-    }
-
+    };
 }
