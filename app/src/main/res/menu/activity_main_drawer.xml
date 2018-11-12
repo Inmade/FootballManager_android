@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item>
+        <menu>
+            <item
+                android:id="@+id/nav_accueil"
+                android:icon="@drawable/home_24dp"
+                android:title="@string/accueil" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_players"
+            android:icon="@drawable/players_24dp"
+            android:title="@string/joueurs" />
+        <item
+            android:id="@+id/nav_infrastructures"
+            android:icon="@drawable/infrastructure_24dp"
+            android:title="@string/infrastructures" />
+        <item
+            android:id="@+id/nav_courrier"
+            android:icon="@drawable/letter_24dp"
+            android:title="@string/courrier" />
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard_24dp"
+            android:title="@string/dashboard" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
