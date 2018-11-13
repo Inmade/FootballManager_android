@@ -87,18 +87,20 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         if (id == R.id.nav_accueil) {
+            setTitle("Accueil");
             Accueil accueil = new Accueil();
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.fragment, accueil).commit();
         }else if (id == R.id.nav_players) {
+            setTitle("Joueurs");
             Players player = new Players();
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.fragment, player).commit();
         } else if (id == R.id.nav_infrastructures) {
-            setTitle("Second Fragment");
-            Second second = new Second();
+            setTitle("Infrastructures");
+            Infrastructures infrastructures = new Infrastructures();
             FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.fragment, second).commit();
+            fragmentManager.beginTransaction().replace(R.id.fragment, infrastructures).commit();
         } else if (id == R.id.nav_courrier) {
 
         } else if (id == R.id.nav_dashboard) {

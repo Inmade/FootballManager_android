@@ -43,7 +43,7 @@ public class Players extends Fragment {
         // Inflate the layout for this fragment
        View view = inflater.inflate(R.layout.fragment_players, container, false);
         CustomListAdapter adapter=new CustomListAdapter(getActivity(), numMaillot, namePlayers, firstnamePlayers, attackPlayers, defensePlayers, salaryPlayers);
-        listeView = (ListView) view.findViewById(R.id.listView);
+        listeView = (ListView) view.findViewById(R.id.listViewPlayers);
         listeView.setAdapter(adapter);
        return view;
     };
