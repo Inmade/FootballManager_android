@@ -1,4 +1,4 @@
-package com.mortier.martin.myapplication;
+package com.mortier.martin.myapplication.adapter;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.mortier.martin.myapplication.R;
 
 public class CustomListAdapterInfrastructures extends ArrayAdapter<String> {
 
@@ -34,7 +36,7 @@ public class CustomListAdapterInfrastructures extends ArrayAdapter<String> {
 
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater=context.getLayoutInflater();
-        View rowView=inflater.inflate(R.layout.playerslist, null,true);
+        View rowView=inflater.inflate(R.layout.infrastructureslist, null,true);
 
         TextView tvNumMaillot = (TextView) rowView.findViewById(R.id.ville);
         TextView tvNomJoueur = (TextView) rowView.findViewById(R.id.rue);
@@ -45,12 +47,12 @@ public class CustomListAdapterInfrastructures extends ArrayAdapter<String> {
         TextView tvNbBallon = (TextView) rowView.findViewById(R.id.nbBallon);
 
         tvNumMaillot.setText(ville[position]);
-        tvNomJoueur.setText(rue[position]);
-        tvFirstnamePlayer.setText(""+numero[position]);
-        tvAttackPlayer.setText("Attaque: "+principale[position]);
-        tvDefensePlayer.setText("Défense: "+nbTerrain[position]);
-        tvSalaryPlayer.setText("Salaire: "+nbVestiaire[position]+"€");
-        tvNbBallon.setText("Salaire: "+nbBallon[position]+"€");
+        tvNomJoueur.setText("Rue:"+rue[position]);
+        tvFirstnamePlayer.setText("Numéro: "+numero[position]);
+        tvAttackPlayer.setText("Stade principale: "+principale[position]);
+        tvDefensePlayer.setText("Nombre de terrains: "+nbTerrain[position]);
+        tvSalaryPlayer.setText("Nombre de vestiaires: "+nbVestiaire[position]);
+        tvNbBallon.setText("Nombre de ballon: "+nbBallon[position]);
         //imageView.setImageResource(imgid[position]);
 
         return rowView;

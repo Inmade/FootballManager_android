@@ -1,14 +1,14 @@
 package com.mortier.martin.myapplication;
 
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.mortier.martin.myapplication.adapter.CustomListAdapterInfrastructures;
 
 
 public class Infrastructures extends Fragment {
@@ -46,7 +46,7 @@ public class Infrastructures extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_infrastructures, container, false);
         CustomListAdapterInfrastructures adapter=new CustomListAdapterInfrastructures(getActivity(), ville, rue, numero, principale, nbTerrain, nbVestiaire, nbBallon);
-        listeView = (ListView) view.findViewById(R.id.listViewPlayers);
+        listeView = (ListView) view.findViewById(R.id.listViewInfrastructure);
         listeView.setAdapter(adapter);
         return view;
     };

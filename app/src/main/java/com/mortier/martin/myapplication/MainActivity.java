@@ -101,7 +101,11 @@ public class MainActivity extends AppCompatActivity
             Infrastructures infrastructures = new Infrastructures();
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.fragment, infrastructures).commit();
-        } else if (id == R.id.nav_courrier) {
+        } else if (id == R.id.nav_courriel) {
+            setTitle("Courrier");
+            Courriel courriel = new Courriel();
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.fragment, courriel).commit();
 
         } else if (id == R.id.nav_dashboard) {
 

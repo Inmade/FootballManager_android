@@ -1,4 +1,4 @@
-package com.mortier.martin.myapplication;
+package com.mortier.martin.myapplication.adapter;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -7,7 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-public class CustomListAdapter extends ArrayAdapter<Integer> {
+import com.mortier.martin.myapplication.R;
+
+public class CustomListAdapterPlayer extends ArrayAdapter<Integer> {
 
     private final Activity context;
     private final Integer[] numMaillot;
@@ -18,7 +20,7 @@ public class CustomListAdapter extends ArrayAdapter<Integer> {
     private final Integer[] salaryPlayer;
     //private final Integer[] imgid;
 
-    public CustomListAdapter(Activity context,Integer[] numMaillot, String[] namePlayer, String[] firstnamePlayer, Integer[] attackPlayer,Integer[] defensePlayer, Integer[] salaryPlayer) {
+    public CustomListAdapterPlayer(Activity context, Integer[] numMaillot, String[] namePlayer, String[] firstnamePlayer, Integer[] attackPlayer, Integer[] defensePlayer, Integer[] salaryPlayer) {
         super(context, R.layout.playerslist, numMaillot);
         // TODO Auto-generated constructor stub
         this.context=context;
