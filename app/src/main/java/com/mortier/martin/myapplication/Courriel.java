@@ -17,7 +17,7 @@ import com.mortier.martin.myapplication.adapter.CustomListAdapterReception;
  * A simple {@link Fragment} subclass.
  */
 public class Courriel extends Fragment {
-    private Button btn_sent;
+    private Button btn_sent, btn_create;
     private ListView listeView;
 
     private String[] mail_destinateur = {
@@ -49,6 +49,16 @@ public class Courriel extends Fragment {
                 Envoye envoye = new Envoye();
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.fragment, envoye).commit();
+            }
+        });
+
+        btn_create = (Button) view.findViewById(R.id.btn_create);
+        btn_create.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Create_courriel create_courriel = new Create_courriel();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.fragment, create_courriel).commit();
             }
         });
         return view;

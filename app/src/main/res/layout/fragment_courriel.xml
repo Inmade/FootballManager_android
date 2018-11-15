@@ -21,7 +21,9 @@
             android:background="@android:color/holo_red_light"
             android:text="Créer"
             android:textColor="@android:color/white"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/create_24dp"
+            android:paddingLeft="10dp"/>
 
         <Button
             android:id="@+id/btn_reception"
@@ -57,6 +59,6 @@
         <ListView android:id="@+id/listViewReception"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/white" />
+            android:background="@color/background_content" />
     </LinearLayout>
 </LinearLayout>

@@ -10,8 +10,7 @@ android:orientation="vertical">
     android:padding="5dp"
     android:textSize="20dp"
     android:textColor="@color/colorBlack"
-    android:gravity="center|right"
-    android:background="@android:color/white"/>
+    android:gravity="center|right" />
 
 <TextView
     android:id="@+id/titre_mail"
