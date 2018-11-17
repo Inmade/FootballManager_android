@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
         fragmentManager.beginTransaction().replace(R.id.fragment, accueil).commit();
     }
 
-    public void scrollToTop(View view){
+    public void toAccueil(View view){
         Accueil accueil = new Accueil();
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.fragment, accueil).commit();
@@ -74,7 +74,10 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.inscription) {
+            return true;
+        }
+        else if (id == R.id.connexion) {
             return true;
         }
 
@@ -106,13 +109,11 @@ public class MainActivity extends AppCompatActivity
             Courriel courriel = new Courriel();
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.fragment, courriel).commit();
-
         } else if (id == R.id.nav_dashboard) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+            setTitle("Dashboard");
+            Dashboard dashboard = new Dashboard();
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.fragment, dashboard).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/holo_red_light"
-            android:text="Créer"
+            android:text="@string/creer"
             android:textColor="@android:color/white"
             android:layout_margin="10dp"
             android:drawableLeft="@drawable/create_24dp"
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/holo_blue_dark"
-            android:text="Réception"
+            android:text="@string/reception"
             android:textColor="@android:color/white"
             android:layout_margin="10dp"/>
 
@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/holo_blue_dark"
-            android:text="Envoyés"
+            android:text="@string/envoyes"
             android:textColor="@android:color/white"
             android:layout_margin="10dp"/>
     </LinearLayout>
@@ -51,7 +51,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Réception"
+            android:text="@string/reception"
             android:textColor="@android:color/white"
             android:background="@drawable/background_degradee"
             android:textSize="20dp"

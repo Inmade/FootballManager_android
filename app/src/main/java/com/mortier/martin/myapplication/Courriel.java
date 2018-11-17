@@ -42,7 +42,7 @@ public class Courriel extends Fragment {
         listeView = (ListView) view.findViewById(R.id.listViewReception);
         listeView.setAdapter(adapter);
 
-       btn_sent = (Button) view.findViewById(R.id.btn_sent);
+        btn_sent = (Button) view.findViewById(R.id.btn_sent);
         btn_sent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

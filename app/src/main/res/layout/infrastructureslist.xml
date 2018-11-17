@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:layout_marginLeft="10dp"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:gravity="center"/>
 
 
@@ -26,7 +26,7 @@
             android:layout_marginTop="5dp"
             android:padding="2dp"
             android:text="Medium Text"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorWhite" />
 
         <TextView
             android:id="@+id/numero"
@@ -36,7 +36,7 @@
             android:layout_marginTop="5dp"
             android:padding="2dp"
             android:text="Medium Text"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorWhite" />
 
     </LinearLayout>
 
@@ -53,7 +53,7 @@
             android:layout_marginTop="5dp"
             android:padding="2dp"
             android:text="Medium Text"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorWhite" />
 
         <TextView
             android:id="@+id/nbTerrain"
@@ -63,7 +63,7 @@
             android:layout_marginTop="5dp"
             android:padding="2dp"
             android:text="Medium Text"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorWhite" />
 
     </LinearLayout>
     <LinearLayout
@@ -79,7 +79,7 @@
             android:layout_marginTop="5dp"
             android:padding="2dp"
             android:text="Medium Text"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorWhite" />
 
         <TextView
             android:id="@+id/nbBallon"
@@ -89,6 +89,6 @@
             android:layout_marginTop="5dp"
             android:padding="2dp"
             android:text="Medium Text"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorWhite" />
     </LinearLayout>
 </LinearLayout>

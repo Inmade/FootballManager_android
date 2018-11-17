@@ -9,7 +9,7 @@
         android:layout_height="60dp"
         android:padding="5dp"
         android:textSize="30dp"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:gravity="center"/>
 
 
@@ -27,7 +27,7 @@
             android:padding="2dp"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorWhite" />
 
         <TextView
             android:id="@+id/firstnamePlayer"
@@ -38,7 +38,7 @@
             android:padding="2dp"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorWhite" />
 
     </LinearLayout>
 
@@ -56,7 +56,7 @@
             android:padding="2dp"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorWhite" />
 
         <TextView
             android:id="@+id/defensePlayer"
@@ -67,7 +67,7 @@
             android:padding="2dp"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorWhite" />
 
     </LinearLayout>
     <LinearLayout
@@ -84,6 +84,6 @@
             android:padding="2dp"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorWhite" />
     </LinearLayout>
 </LinearLayout>

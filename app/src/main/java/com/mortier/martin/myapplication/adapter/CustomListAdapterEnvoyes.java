@@ -17,7 +17,7 @@ public class CustomListAdapterEnvoyes extends ArrayAdapter<String> {
     private final String[] corps;
 
     public CustomListAdapterEnvoyes(Activity context, String[] mail_destinataire, String[] titre, String[] corps) {
-        super(context, R.layout.receptionlist, mail_destinataire);
+        super(context, R.layout.envoyelist, mail_destinataire);
         // TODO Auto-generated constructor stub
         this.context = context;
         this.mail_destinataire = mail_destinataire;
@@ -27,7 +27,7 @@ public class CustomListAdapterEnvoyes extends ArrayAdapter<String> {
 
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
-        View rowView = inflater.inflate(R.layout.receptionlist, null, true);
+        View rowView = inflater.inflate(R.layout.envoyelist, null, true);
 
         TextView tvMailDestinataire = (TextView) rowView.findViewById(R.id.mail_destinataire);
         TextView tvTitreMail = (TextView) rowView.findViewById(R.id.titre_mail);
