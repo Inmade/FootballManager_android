@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "163257060024",
+    "firebase_url": "https://football-manager-ee637.firebaseio.com",
+    "project_id": "football-manager-ee637",
+    "storage_bucket": "football-manager-ee637.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163257060024:android:ba1ee70f00ae22c0",
+        "android_client_info": {
+          "package_name": "com.mortier.martin.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163257060024-9kcogcbsnaao6u4r014ghnb0k4keq6nf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWc5OzzFqEv41I0T0gy3EZKwsShm8FXZ8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

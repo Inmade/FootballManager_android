@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".Accueil"
     android:orientation="vertical"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:id="@+id/accueil_layout">
 
     <LinearLayout
         android:layout_width="match_parent"
