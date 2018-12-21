@@ -14,6 +14,7 @@
         android:gravity="top|right"
         android:layout_marginBottom="-3dp">
     <Button
+        android:id="@+id/ajout_joeurs"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:text="@string/ajouter_un_joueur"
@@ -47,18 +48,18 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="177dp"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
-                android:orientation="vertical"
-                android:layout_margin="10dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="left"
-                android:minHeight="50dp"
+                android:layout_margin="10dp"
+                android:background="@color/colorWhite"
                 android:minWidth="150dp"
+                android:minHeight="50dp"
+                android:orientation="vertical"
                 android:padding="10dp">
 
                 <TextView
@@ -66,18 +67,40 @@
                     android:layout_height="wrap_content"
                     android:text="@string/joueurs"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:text="Moyenne de l'attaque:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textview_moyenneA"
+                    android:text="test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Moyenne de la défene::"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textview_moyenneD"
+                    android:text="test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
                 android:layout_gravity="right"
-                android:orientation="vertical"
                 android:layout_margin="10dp"
-                android:minHeight="50dp"
-                android:minWidth="150dp"
                 android:layout_marginRight="-150dp"
+                android:background="@color/colorWhite"
+                android:minWidth="150dp"
+                android:minHeight="50dp"
+                android:orientation="vertical"
                 android:padding="10dp">
 
                 <TextView
@@ -85,6 +108,18 @@
                     android:layout_height="wrap_content"
                     android:text="@string/infrastructures"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:text="Nombre total de ballons:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textview_nbballons"
+                    android:text="test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

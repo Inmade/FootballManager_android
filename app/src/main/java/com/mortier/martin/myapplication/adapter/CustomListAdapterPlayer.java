@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import com.mortier.martin.myapplication.R;
 
+import java.util.ArrayList;
+
 public class CustomListAdapterPlayer extends ArrayAdapter<Integer> {
 
     private final Activity context;

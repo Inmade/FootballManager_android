@@ -61,6 +61,9 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.fragment, accueil).commit();
 
+        Camera camera = new Camera();
+
+
     }
 
     public void toAccueil(View view){
@@ -102,10 +105,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.inscription) {
-            return true;
-        }
-        else if (id == R.id.connexion) {
+        if (id == R.id.connexion) {
             if (this.isCurrentUserLogged()){
                 signOutUserFromFirebase();
             } else {
@@ -126,15 +126,15 @@ public class MainActivity extends AppCompatActivity
 
         if (requestCode == RC_SIGN_IN) {
             if (resultCode == RESULT_OK) { // SUCCESS
-                showSnackBar(this.findViewById(R.id.accueil_layout), "Authentification réussie");
+                //showSnackBar(this.findViewById(R.id.acc), "Authentification réussie");
                 updateUIWhenResuming();
             } else { // ERRORS
                 if (response == null) {
-                    showSnackBar(this.findViewById(R.id.accueil_layout), "Authentification ratée");
+                 //   showSnackBar(this.findViewById(R.id.accueil_layout), "Authentification ratée");
                 } else if (response.getError().getErrorCode() == ErrorCodes.NO_NETWORK) {
-                    showSnackBar(this.findViewById(R.id.accueil_layout), "Pas de connexion");
+                  //  showSnackBar(this.findViewById(R.id.accueil_layout), "Pas de connexion");
                 } else if (response.getError().getErrorCode() == ErrorCodes.UNKNOWN_ERROR) {
-                    showSnackBar(this.findViewById(R.id.accueil_layout), "Erreur inconnue");
+                  //  showSnackBar(this.findViewById(R.id.accueil_layout), "Erreur inconnue");
                 }
             }
         }
@@ -221,7 +221,12 @@ public class MainActivity extends AppCompatActivity
             Dashboard dashboard = new Dashboard();
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.fragment, dashboard).commit();
-        }
+        } else if (id == R.id.nav_camera) {
+        setTitle("Camera");
+        Camera camera = new Camera();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.fragment, camera).commit();
+    }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

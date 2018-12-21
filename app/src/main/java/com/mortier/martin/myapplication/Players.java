@@ -16,10 +16,10 @@ public class Players extends Fragment {
     private ListView listeView;
 
     private Integer[] numMaillot = {
-            1,2
+        1,2,
     };
     private String[] namePlayers = {
-            "Passarello", "Quenon"
+            "Passarello","Quenon"
     };
     private String[] firstnamePlayers = {
             "Luca", "Marc"
@@ -36,6 +36,20 @@ public class Players extends Fragment {
 
 
 
+public Integer[] getDefensePlayers()
+{
+    return defensePlayers;
+}
+
+public Integer[] getAttackPlayers()
+{
+    return attackPlayers;
+}
+
+
+public Players(){
+
+}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

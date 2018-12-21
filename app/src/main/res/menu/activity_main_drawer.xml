@@ -29,5 +29,9 @@
             android:id="@+id/nav_dashboard"
             android:icon="@drawable/dashboard_24dp"
             android:title="@string/dashboard" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/camera_24dp"
+            android:title="@string/Outils" />
     </group>
 </menu>

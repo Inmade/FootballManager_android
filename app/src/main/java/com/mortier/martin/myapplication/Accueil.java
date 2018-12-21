@@ -25,5 +25,4 @@ public class Accueil extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_accueil, container, false);
     }
-
 }

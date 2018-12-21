@@ -38,6 +38,9 @@ public class Infrastructures extends Fragment {
     };
 
 
+    public Integer[] getNbBallon(){
+        return nbBallon;
+    }
 
 
     @Override
